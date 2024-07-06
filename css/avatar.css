@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/boutique.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-roupas {
+    display: none;
+}
+
+.container-roupas.active {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.avatar-grid {
+    display: grid;
+    justify-content: center;
+    gap: 2vw;
+    grid-template-columns: repeat(6, 10vw);
+}
+
+.avatar {
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: white;
+    padding: 5px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+.body {
+    position: absolute;
+    width: 20vw;
+    height: 60vh;
+}
+
+.roupas {
+    position: absolute;
+    width: 20vw;
+    height: 60vh;
+    z-index: 2;
+}
+
+.body img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.botao {
+    text-align: center;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+}
+
+.botao h1 {
+    margin: 0;
+    background-color: white;
+    display: inline;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    cursor: pointer;
+}
+
+.container-final {
+    display: none;
+}
+
+.container-final.active {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media (width < 880px) {
+    .body {
+        width: 30vw;
+        height: 50vh;
+    }
+    .roupas {
+        width: 30vw;
+        height: 50vh;
+    }
+}
+
+@media (width < 430px) {
+    .body {
+        width: 70vw;
+        height: 60vh;
+    }
+    .roupas {
+        width: 70vw;
+        height: 60vh;
+    }
+    .avatar-grid {
+        grid-template-columns: repeat(3, 20vw);
+    }
+    .avatar {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+.botao h1:hover {
+    border: 1px solid white;
+}
+
+.carousel-control-next-icon {
+    background-image: url('../images/seta-prox.png');
+    filter: invert(50%);
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../images/seta-ant.png');
+    filter: invert(50%);
+}
+
+.carousel-inner {
+    text-align: center;
+}
+
+.foto img {
+    height: 60%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#carousel-fundos {
+    height: 100vh;
+}
+
+.impressao {
+    z-index: 2;
+    margin: 50px;
+}
+
+.impressao h1 {
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 0;
+    background-color: transparent;
+}
+
+.impressao h1:hover {
+    font-size: 1.1rem;
+    transition-duration: 500ms;
+}
