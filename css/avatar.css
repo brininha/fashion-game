@@ -70,14 +70,14 @@ body {
 
 .body {
     position: absolute;
-    width: 20vw;
-    height: 60vh;
+    width: 235.6px;
+    height: 333.2px;
 }
 
 .roupas {
     position: absolute;
-    width: 20vw;
-    height: 60vh;
+    width: 235.6px;
+    height: 333.2px;
     z-index: 2;
 }
 
@@ -144,26 +144,7 @@ body {
     align-items: center;
 }
 
-@media (width < 880px) {
-    .body {
-        width: 30vw;
-        height: 50vh;
-    }
-    .roupas {
-        width: 30vw;
-        height: 50vh;
-    }
-}
-
-@media (width < 430px) {
-    .body {
-        width: 70vw;
-        height: 60vh;
-    }
-    .roupas {
-        width: 70vw;
-        height: 60vh;
-    }
+@media (width <= 430px) {
     .avatar-grid {
         grid-template-columns: repeat(3, 20vw);
     }
