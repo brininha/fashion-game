@@ -17,21 +17,21 @@ body {
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    font-size: 1.6rem;
-    padding: 0;
-    margin: 0;
+    font-size: 2rem;
     color: black;
-    padding: 10px;
-    padding-inline: 20px;
+    padding: 15px 30px;
     border-radius: 40px;
     background-color: #2EC6FF;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    user-select: none;
+    transition: transform 0.2s;
 }
 
 .caixa-botao h1:hover {
     cursor: pointer;
 }
 
-@media (width <= 430px) {
+@media (width <= 768px) {
     body {
         background-image: url("../images/background-mobile.jpg");
         border: 3px solid black;

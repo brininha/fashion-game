@@ -202,3 +202,26 @@ body {
     font-size: 1.1rem;
     transition-duration: 500ms;
 }
+
+/* melhorando a responsividade */
+.container-roupas .body, 
+.container-roupas .roupas {
+    position: absolute;
+    width: 70vw; 
+    max-width: 350px; 
+    aspect-ratio: 235.6 / 333.2; 
+    height: auto;
+}
+
+@media print {
+    .carousel-control-prev, 
+    .carousel-control-next,
+    .botao.impressao {
+        display: none !important;
+    }
+    
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
